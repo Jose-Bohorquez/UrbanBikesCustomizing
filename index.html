@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza Tu Bicicleta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white text-center py-4">
+        <h1 class="text-2xl font-bold">Personaliza Tu Bicicleta</h1>
+    </header>
+    <main class="flex justify-around p-8">
+        <section id="preview" class="flex-2 border border-gray-300 p-4 bg-white">
+            <h2 class="text-xl font-semibold mb-4">Vista Previa</h2>
+            <!-- Canvas para mostrar la bicicleta personalizada -->
+            <canvas id="bikeCanvas" width="800" height="600" class="border border-gray-300"></canvas>
+        </section>
+        <section id="customization" class="flex-1 p-4">
+            <h2 class="text-xl font-semibold mb-4">Personaliza tu bicicleta</h2>
+            <label for="colorPicker" class="block mb-2">Elige un color:</label>
+            <input type="color" id="colorPicker" name="colorPicker" class="border rounded p-2">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
